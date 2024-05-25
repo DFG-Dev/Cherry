@@ -17,12 +17,12 @@ public class pingCommand implements ISlashCommandHandler {
     * You can see that the execute method takes a SlashCommandInteractionEvent as a parameter.
     * This event is fired when a user interacts with a slash command.
     *
-    * IMPORATANT: READ THE DOCS THERE ARE ALSO SOME EXAMPLES (https://docs.jda.wiki/)
+    * IMPORATANT: READ THE DOCS THERE ARE ALSO SOME EXAMPLES (https://docs.jda.wiki/ for JAVADOCS or https://jda.wiki/ for WIKI)
     *
     * */
     @Override
     public void execute(@NotNull SlashCommandInteractionEvent event) {
-        event.deferReply(true).queue(); // Acknowledge the command, and send a reply later (SHOWING THINKING IN THE CHAT). IS IT NECESSARY? NO, BUT IT'S A GOOD PRACTICE.
+        event.deferReply(true).queue(); // Acknowledge the command, and send a reply later (SHOWING THINKING IN THE CHAT). IS IT NECESSARY? NO, BUT IT'S A GOOD PRACTICE. REFERENCE (https://jda.wiki/using-jda/interactions/#responding-to-slash-commands)
 
         // Creating an embed
         EmbedBuilder embed = new EmbedBuilder();
