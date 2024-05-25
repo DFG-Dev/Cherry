@@ -1,6 +1,8 @@
 package de.marco1223.cherry;
 
+import de.marco1223.cherry.commands.system.pingCommand;
 import de.marco1223.cherry.handlers.DatabaseHandler;
+import de.marco1223.cherry.handlers.SlashCommandHandler;
 import io.github.cdimascio.dotenv.Dotenv;
 import net.dv8tion.jda.api.*;
 import net.dv8tion.jda.api.entities.Activity;
@@ -17,6 +19,7 @@ public class Cherry {
         databaseHandler.connect(dotenv.get("DB_URL"), dotenv.get("DB_USER"), dotenv.get("DB_PASSWORD"));
 
         JDABuilder builder = JDABuilder.createDefault(dotenv.get("BOT_TOKEN"));
+        builder.addEventListeners(registerCommands());
         JDA jda = builder.build();
 
         jda.awaitReady();
@@ -33,4 +36,16 @@ public class Cherry {
         jda.getPresence().setActivity(Activity.playing("with IntelliJ IDEA"));
 
     }
+
+    private static SlashCommandHandler registerCommands() {
+
+        final var slashCommandHandler = new SlashCommandHandler();
+        slashCommandHandler.addCommands(
+                new pingCommand() // Add your commands here like this.
+        );
+
+        return slashCommandHandler;
+
+    }
+
 }
