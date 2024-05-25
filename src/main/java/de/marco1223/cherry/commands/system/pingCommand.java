@@ -17,7 +17,7 @@ public class pingCommand implements ISlashCommandHandler {
     * You can see that the execute method takes a SlashCommandInteractionEvent as a parameter.
     * This event is fired when a user interacts with a slash command.
     *
-    * IMPORATANT: READ THE DOCS THERE ARE ALSO SOME EXAMPLES (https://docs.jda.wiki/ for JAVADOCS or https://jda.wiki/ for WIKI)
+    * IMPORTANT: READ THE DOCS THERE ARE ALSO SOME EXAMPLES (https://docs.jda.wiki/ for JAVADOCS or https://jda.wiki/ for WIKI)
     *
     * */
     @Override
