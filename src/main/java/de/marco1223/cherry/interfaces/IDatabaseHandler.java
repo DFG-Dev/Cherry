@@ -1,4 +1,4 @@
-package de.marco1223.interfaces;
+package de.marco1223.cherry.interfaces;
 
 import java.sql.DatabaseMetaData;
 import java.util.List;

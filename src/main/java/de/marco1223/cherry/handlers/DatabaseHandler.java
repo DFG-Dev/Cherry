@@ -1,6 +1,6 @@
-package de.marco1223.handlers;
+package de.marco1223.cherry.handlers;
 
-import de.marco1223.interfaces.IDatabaseHandler;
+import de.marco1223.cherry.interfaces.IDatabaseHandler;
 import net.dv8tion.jda.internal.utils.JDALogger;
 
 import java.sql.*;

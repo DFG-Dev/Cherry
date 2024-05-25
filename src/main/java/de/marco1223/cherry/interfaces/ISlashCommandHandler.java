@@ -1,4 +1,4 @@
-package de.marco1223.interfaces;
+package de.marco1223.cherry.interfaces;
 
 import net.dv8tion.jda.api.events.interaction.command.SlashCommandInteractionEvent;
 import net.dv8tion.jda.api.interactions.commands.build.CommandData;

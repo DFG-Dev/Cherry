@@ -1,6 +1,6 @@
-package de.marco1223.handlers;
+package de.marco1223.cherry.handlers;
 
-import de.marco1223.interfaces.ISlashCommandHandler;
+import de.marco1223.cherry.interfaces.ISlashCommandHandler;
 import net.dv8tion.jda.api.events.guild.GuildReadyEvent;
 import net.dv8tion.jda.api.events.interaction.command.SlashCommandInteractionEvent;
 import net.dv8tion.jda.api.hooks.ListenerAdapter;
